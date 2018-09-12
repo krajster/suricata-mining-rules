@@ -38,4 +38,4 @@ alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMini
 
 alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (ethermine.org)"; dns_query; content:"ethermine.org"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000018; rev:1;)
 
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (unimining.net)"; dns_query; content:"unimining.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000018; rev:1;)
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (unimining.net)"; dns_query; content:"unimining.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000019; rev:1;)
